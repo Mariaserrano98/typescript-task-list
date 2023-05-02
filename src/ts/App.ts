@@ -73,7 +73,7 @@ export class App {
       "click",
       (e) => {
         this.crossOut(e);
-      }
+      }      
     );
     //Activar el modo edición desde la tarea
     newRow.firstElementChild?.lastElementChild?.addEventListener("focus", (e) => {
