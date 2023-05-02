@@ -68,7 +68,7 @@ export class App {
 </td>
   `;
     //Tachar una tarea realizada
-    
+  
     newRow.firstElementChild?.firstElementChild?.addEventListener(
       "click",
       (e) => {
