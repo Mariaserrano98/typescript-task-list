@@ -1,4 +1,4 @@
-import { Fetch } from "./Fetch.js";
+import { Fetch } from "./Fetch";
 const fetch = new Fetch();
 export class App {   
   private alert:HTMLElement; 

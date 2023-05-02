@@ -52,7 +52,7 @@ export class Fetch {
     return data;
   }
 
-  static async delete(id:number) {
+  static async delete(id:string) {
     const response = await fetch(`${this.BASE_URL}${id}`, {
       method: "DELETE",
     });
