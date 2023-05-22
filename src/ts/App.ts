@@ -1,7 +1,7 @@
 import { Fetch } from "./Fetch";
-const fetch = new Fetch();
-export class App {   
-  private alert:HTMLElement; 
+const fetch = new Fetch(); // Instancia de la clase Fetch para realizar las peticiones a la API REST 
+export class App {      
+  private alert:HTMLElement;        
   private close:HTMLElement;
   private input:HTMLInputElement;
   private arrow:HTMLElement;

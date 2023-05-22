@@ -1,6 +1,6 @@
 export class Fetch {  // Clase Fetch con métodos estáticos para realizar las peticiones al servidor
   BASE_URL = "http://localhost:8000/tasks"; // URL base del servidor
-  static async getAll() {
+  static async getAll() { // Método para obtener todas las tareas 
     const response = await fetch("http://localhost:8000/tasks"); // fetch devuelve una promesa que se resuelve cuando se obtiene la respuesta del servidor (response)
     if (!response.ok) {                                    // Si la respuesta no es correcta, se lanza un error con el mensaje de error correspondiente (statusText) y el código de error (status) 
       throw new Error(
@@ -34,7 +34,7 @@ export class Fetch {  // Clase Fetch con métodos estáticos para realizar las p
       headers: {                                             // Se especifica el tipo de contenido del cuerpo de la petición (Content-Type) 
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(task), // El cuerpo de la petición es el objeto task en formato JSON 
+      body: JSON.stringify(task), // El cuerpo de la petición es el objeto task en formato JSON  stringify(): convierte un objeto o valor de JavaScript en una cadena de texto JSON
     });
     if (!response.ok) {       // Si la respuesta no es correcta, se lanza un error con el mensaje de error correspondiente (statusText) y el código de error (status) 
       throw new Error(    // statusText: mensaje de error del servidor 
